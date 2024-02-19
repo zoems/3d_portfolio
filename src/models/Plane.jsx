@@ -1,7 +1,7 @@
-import { useRef, useEffect } from 'react'
-import { useAnimations, useGLTF } from '@react-three/drei'
+import { useEffect, useRef } from 'react'
+import { useGLTF, useAnimations } from '@react-three/drei'
 
-import planeScene from '..assests/3d/plane.glb'
+import planeScene from '../assets/3d/plane.glb'
 
 const Plane = ({ isRotating, ...props }) => {
   const ref = useRef();
@@ -10,12 +10,11 @@ const Plane = ({ isRotating, ...props }) => {
 
   useEffect(() => {
     if (isRotating) {
-      actions['Take 001'].play();
+      actions["Take 001"].play();
     } else {
-      actions['Take 002'].stop();
+      actions["Take 001"].stop();
     }
-
-  }, [actions, isRotating])
+  }, [actions, isRotating]);
 
   return (
     <mesh {...props} ref={ref}>

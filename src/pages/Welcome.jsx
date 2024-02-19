@@ -3,11 +3,11 @@ import {Canvas} from '@react-three/fiber'
 import Loader from '../components/Loader'
 
 import Island from '../models/Island';
-import { Sky } from '../models/Sky';
+import  Sky  from '../models/Sky';
 import Bird from '../models/Bird';
-import { Plane } from "../models/Plane";
+import Plane  from '../models/Plane';
 
-const Home = () => {
+const Welcome = () => {
   const [ isRotating, setIsRotating ] = useState(false)
   const [currentStage, setCurrentStage] = useState(1)
 
@@ -79,4 +79,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Welcome
