@@ -9,6 +9,10 @@ const Bird = () => {
   const { scene, animations } = useGLTF(birdScene); // get the animations from usegltf by passing xscene
   const { actions } = useAnimations(animations, birdRef); // define them as actions. with useAnimations helper method (drei), pass animations and ref to the model to be animated
 
+  useEffect(() => {
+    actions["Take 001"].play();
+  }, []);
+
   useFrame(({ clock, camera }) => {
     // Update the Y position to simulate bird-like motion using a sine wave
     birdRef.current.position.y = Math.sin(clock.elapsedTime) * 0.2 + 2;

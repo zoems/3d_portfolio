@@ -47,8 +47,6 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
   const handlePointerMove= (e) => {
     e.stopPropagation();
     e.preventDefault();
-    setIsRotating(true);
-
     if (isRotating) {
       const clientX = e.touches
       ? e.touches[0].clientX
@@ -80,40 +78,37 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
 
   useFrame(() => {
-    if(!isRotating) {
+    if (!isRotating) {
       rotationSpeed.current *= dampingFactor;
 
       if (Math.abs(rotationSpeed.current) < 0.001) {
         rotationSpeed.current = 0;
       }
-
       islandRef.current.rotation.y += rotationSpeed.current;
-      //slows plane down as O scroll
+
     } else {
       const rotation = islandRef.current.rotation.y;
-
       const normalizedRotation =
-      ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+        ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
-    // Set the current stage based on the island's orientation
-    switch (true) {
-      case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
-        setCurrentStage(4);
-        break;
-      case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
-        setCurrentStage(3);
-        break;
-      case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
-        setCurrentStage(2);
-        break;
-      case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
-        setCurrentStage(1);
-        break;
-      default:
-        setCurrentStage(null);
-    };
+      switch (true) {
+        case normalizedRotation >= 5.45 && normalizedRotation <= 5.85:
+          setCurrentStage(4);
+          break;
+        case normalizedRotation >= 0.85 && normalizedRotation <= 1.3:
+          setCurrentStage(3);
+          break;
+        case normalizedRotation >= 2.4 && normalizedRotation <= 2.6:
+          setCurrentStage(2);
+          break;
+        case normalizedRotation >= 4.25 && normalizedRotation <= 4.75:
+          setCurrentStage(1);
+          break;
+        default:
+          setCurrentStage(null);
+      }
     }
-  })
+  });
 
   useEffect(() => {
     // Add event listeners for pointer and keyboard events
