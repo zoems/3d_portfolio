@@ -11,7 +11,8 @@ const Sky = ({ isRotating }) => {
 
   useFrame((_, delta) => {
     if (isRotating) {
-      skyRef.current.rotation.y += 0.25 * delta; // Adjust the rotation speed as needed
+      skyRef.current.rotation.y += 0.25 * delta;
+      console.log("true") // Adjust the rotation speed as needed
     }
   });
 
