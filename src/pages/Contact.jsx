@@ -5,12 +5,16 @@ import React, { Suspense, useRef, useState } from 'react'
 
 import Fox from '../models/Fox'
 import Loader from '../components/Loader'
+import useAlert from '../hooks/useAlert'
+import Alert from '../components/Alert'
 
 const Contact = () => {
   const formRef = useRef(null)
   const [form, setForm] = useState({name: '', email: '', message:''})
   const [isLoading, setisLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState('idle')
+
+  const { alert, showAlert, hideAlert } = useAlert();
 
   // e calls set form 'spreads other properties' then the [target] value is updated with e.target.value this is how i get my form values from the DOM
   const handleChange = (e) => {
@@ -27,27 +31,28 @@ const Contact = () => {
       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
       {
         from_name: form.name,
-        to_name: "JavaScript Mastery",
+        to_name: "Zoe Mawby Smart",
         from_email: form.email,
-        to_email: "sujata@jsmastery.pro",
+        to_email: "zoemsmart@gmail.com",
         message: form.message,
       },
       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
     ).then(() => {
       setisLoading(false);
-      // TODO success message
-      // hide an alert
+      showAlert({ show: true, text: 'Message sent successfully!', type: 'success' })
+
 
       setTimeout(() => {
-        setCurrentAnimation('idle')
-        setForm({name: '', email: '', message:''})
+        hideAlert();
+        setCurrentAnimation('idle');
+        setForm({name: '', email: '', message:''});
       }, [3000])
 
     }).catch((error) => {
       setisLoading(false)
       setCurrentAnimation('idle')
       console.log(error)
-      // error message
+      showAlert({ show: true, text: 'I didnt recieve your message', type: 'danger' })
     })
   };
 
@@ -55,9 +60,9 @@ const Contact = () => {
   const handleBlur = () => setCurrentAnimation('idle'); //out
 
 
-
   return (
     <section className='relative flex lg:flex-row flex-col max-container'>
+      {alert.show && <Alert {...alert} />}
       <div className='flex-1 min-w-[50%] flex flex-col'>
         <h1 className='head-text'>Get In Touch</h1>
         <form
