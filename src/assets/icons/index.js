@@ -26,8 +26,20 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import ruby from './ruby.svg'
+import postgresql from './postgresql.svg'
+import rails from './rails.svg'
+import vue from './vue.svg'
+import figma from './figma.svg'
+import heroku from './heroku.svg'
 
 export {
+    vue,
+    figma,
+    heroku,
+    rails,
+    postgresql,
+    ruby,
     css,
     express,
     git,
