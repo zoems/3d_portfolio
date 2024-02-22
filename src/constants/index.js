@@ -1,26 +1,28 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images"; // zero logic
+import { gls, uni, oberholz, ZMS, starbucks, tesla } from "../assets/images"; // zero logic
 import {
-    car,
+    ruby,
+    figma,
+    heroku,
+    vue,
+    rails,
+    postgresql,
+    // car,
     contact,
     css,
     estate,
-    express,
+    // express,
     git,
     github,
     html,
     javascript,
     linkedin,
-    // mongodb,
-    // motion,
-    // mui,
-    nextjs,
+    // nextjs,
     nodejs,
     pricewise,
     react,
-    redux,
+    // redux,
     sass,
     snapgram,
-    summiz,
     tailwindcss,
     threads,
     typescript
@@ -32,11 +34,21 @@ export const skills = [
         name: "CSS",
         type: "Frontend",
     },
-    // {
-    //     imageUrl: express,
-    //     name: "Express",
-    //     type: "Backend",
-    // },
+    {
+        imageUrl: rails,
+        name: "rails",
+        type: "Backend",
+    },
+    {
+      imageUrl: postgresql,
+      name: "postgresql",
+      type: "Frontend",
+    },
+    {
+        imageUrl: ruby,
+        name: "ruby",
+        type: "Backend",
+    },
     {
         imageUrl: git,
         name: "Git",
@@ -57,16 +69,16 @@ export const skills = [
         name: "JavaScript",
         type: "Frontend",
     },
-    // {
-    //     imageUrl: mongodb,
-    //     name: "MongoDB",
-    //     type: "Database",
-    // },
-    // {
-    //     imageUrl: nextjs,
-    //     name: "Next.js",
-    //     type: "Frontend",
-    // },
+    {
+        imageUrl: vue,
+        name: "Vue",
+        type: "Frontend",
+    },
+    {
+        imageUrl: figma,
+        name: "Figma",
+        type: "Frontend",
+    },
     {
         imageUrl: nodejs,
         name: "Node.js",
@@ -77,11 +89,11 @@ export const skills = [
         name: "React",
         type: "Frontend",
     },
-    // {
-    //     imageUrl: redux,
-    //     name: "Redux",
-    //     type: "State Management",
-    // },
+    {
+        imageUrl: heroku,
+        name: "Heroku",
+        type: "Host",
+    },
     {
         imageUrl: sass,
         name: "Sass",
@@ -103,8 +115,8 @@ export const skills = [
     {
         title: "Camp Counsellor / Teacher",
         company_name: "GLS - German Language School",
-        icon: shopify,
-        iconBg: "#b7e4c7",
+        icon: gls,
+        iconBg: "#00c2c8",
         date: "Jun 2018 - Jul 2018",
         points: [
           "Supervised a group of 50 students aged 12-15 within a collaborative team setting",
@@ -116,8 +128,8 @@ export const skills = [
       {
           title: "Biochemistry Ba.Sc (Incomplete)",
           company_name: "Freie Universität, Berlin",
-          icon: shopify,
-          iconBg: "#b7e4c7",
+          icon: uni,
+          iconBg: "#cbff00",
           date: "2019-2022",
           points: [
             "Advanced in Chem, Phys, and Maths, despite an incomplete degree",
@@ -128,8 +140,8 @@ export const skills = [
       {
         title: "Store Lead",
         company_name: "St Oberholz Coworking and Cafe",
-        icon: tesla,
-        iconBg: "#fbc3bc",
+        icon: oberholz,
+        iconBg: "#f92c57",
         date: "Jan 2021 - Oct 2023",
         points: [
           "Colaborated on the development of a company-wide barista training program",
@@ -141,8 +153,8 @@ export const skills = [
       {
         title: "Full-Stack Web Developer",
         company_name: "Freelance",
-        icon: starbucks,
-        iconBg: "#accbe1",
+        icon: ZMS,
+        iconBg: "#f2f230",
         date: "Feb 2024 - Present",
         points: [
             "Creating responsive web design using Figma.",

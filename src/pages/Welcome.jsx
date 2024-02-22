@@ -11,6 +11,7 @@ import HomeInfo from '../components/HomeInfo';
 import sakura from "../assets/sakura.mp3";
 import { soundon, soundoff } from '../assets/icons';
 
+
 const Welcome = () => {
   const audioRef = useRef(new Audio(sakura));
   const [isPlayingMusic, setIsPlayingMusic] = useState(false)
