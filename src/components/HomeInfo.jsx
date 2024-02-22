@@ -17,7 +17,7 @@ const renderContent = {
     <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
       Hi, I am <span className='font-semibold'>Zoe Mawby Smart</span> 👋
       <br />
-      A Software Enfineer from Australia
+      A Software Engineer from Australia
     </h1>
   ),
   2: (
@@ -36,7 +36,7 @@ const renderContent = {
   ),
   4: (
     <InfoBox
-      text='Looking for a keen new Dev? I could be right for your team.'
+      text='Looking for a Dev? I could be right for your team!'
       link= '/contact'
       btnText= "Let's talk"
     />
