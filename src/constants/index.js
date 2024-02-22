@@ -10,9 +10,9 @@ import {
     html,
     javascript,
     linkedin,
-    mongodb,
-    motion,
-    mui,
+    // mongodb,
+    // motion,
+    // mui,
     nextjs,
     nodejs,
     pricewise,
@@ -63,16 +63,6 @@ export const skills = [
     //     type: "Database",
     // },
     // {
-    //     imageUrl: motion,
-    //     name: "Motion",
-    //     type: "Animation",
-    // },
-    // {
-    //     imageUrl: mui,
-    //     name: "Material-UI",
-    //     type: "Frontend",
-    // },
-    // {
     //     imageUrl: nextjs,
     //     name: "Next.js",
     //     type: "Frontend",
@@ -92,11 +82,11 @@ export const skills = [
     //     name: "Redux",
     //     type: "State Management",
     // },
-    // {
-    //     imageUrl: sass,
-    //     name: "Sass",
-    //     type: "Frontend",
-    // },
+    {
+        imageUrl: sass,
+        name: "Sass",
+        type: "Frontend",
+    },
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
