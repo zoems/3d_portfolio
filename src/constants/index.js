@@ -97,62 +97,60 @@ export const skills = [
         name: "TypeScript",
         type: "Frontend",
     }
-];
+  ];
 
-export const experiences = [
+  export const experiences = [
     {
-        title: "Freelance",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
+        title: "Camp Counsellor / Teacher",
+        company_name: "GLS - German Language School",
         icon: shopify,
         iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        date: "Jun 2018 - Jul 2018",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+          "Supervised a group of 50 students aged 12-15 within a collaborative team setting",
+          "Adapted to assume whichever role was needed on short notice",
+          "Served as a guide, providing city tours and navigating public transportation with large groups of students",
+          "Developed and organized activities while effectively managing budget and expectations",
         ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+      },
+      {
+          title: "Biochemistry Ba.Sc (Incomplete)",
+          company_name: "Freie Universität, Berlin",
+          icon: shopify,
+          iconBg: "#b7e4c7",
+          date: "2019-2022",
+          points: [
+            "Advanced in Chem, Phys, and Maths, despite an incomplete degree",
+            "Showcased resilience and tenacity throughout 6 semesters of rigorous academic pursuit",
+            "Demonstrated decision-making skills and keen self-awareness, opting to explore a new path aligned more with my current aspirations",
+          ],
+      },
+      {
+        title: "Store Lead",
+        company_name: "St Oberholz Coworking and Cafe",
+        icon: tesla,
+        iconBg: "#fbc3bc",
+        date: "Jan 2021 - Oct 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+          "Colaborated on the development of a company-wide barista training program",
+          "Managed staff shift schedules of circa 2 employees across three different locations",
+          "Initiated and oversaw significant conceptual changes within the coworking space and cafe enhancing operational efficiency",
+          "Executed human resources responsibilities within the managerial capacity",
         ],
-    },
-];
+      },
+      {
+        title: "Full-Stack Web Developer",
+        company_name: "Freelance",
+        icon: starbucks,
+        iconBg: "#accbe1",
+        date: "Feb 2024 - Present",
+        points: [
+            "Creating responsive web design using Figma.",
+            "GitHub for version control.",
+            "Deploying websites on Heroku and managing media with Cloudinary.",
+        ],
+      },
+  ];
 
 export const socialLinks = [
     {
@@ -163,12 +161,12 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/zoems',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/zoe-mawby-smart',
     }
 ];
 
@@ -176,43 +174,38 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
+        name: 'Portfolio Website',
         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        link: 'https://github.com/zoems/3d-portfolio',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'SkillSwap',
+        description: 'From concept to product in 2 weeks! SkillShare is a Rails 7 Web app where users can share their knowledge and materials with other peers to reduce the threshold for starting new hobbies. Match to swap your skills. Implemented swiping functionality both frontend with JavaScript and backend with Ruby',
+        link: 'https://github.com/IratxeGarrido/skill-swap',
     },
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        name: 'Warm and Furries',
+        description: "From concept to product in 1 week! A Web app featuring user-friendly booking and rental processes for pets on both the main page and map view. Made with Ruby on Rails 7 Devise Js.. and more. Features a user Dashboard for members' bookings and offers.",
+        link: 'https://github.com/zoems/warmandfurries',
     },
     {
         iconUrl: estate,
         theme: 'btn-back-black',
-        name: 'Real-Estate Application',
+        name: 'SmartAqua',
         description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
+        link: 'https://github.com/zoems/smartaqua',
     },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+        {
+        iconUrl: estate,
+        theme: 'btn-back-black',
+        name: 'Tart Twins Online Store',
+        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+        link: 'https://github.com/zoems/tart-twins',
+    },
+
+
 ];

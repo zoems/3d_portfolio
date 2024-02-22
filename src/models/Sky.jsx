@@ -11,7 +11,6 @@ export function Sky({ isRotating }) {
   useFrame((_, delta) => {
     if (isRotating) {
       skyRef.current.rotation.y += 0.15 * delta;
-      rotationSpeed.current =0.0125;
     }
   });
 
