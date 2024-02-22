@@ -8,9 +8,29 @@ import Bird from '../models/Bird';
 import Plane  from '../models/Plane';
 import HomeInfo from '../components/HomeInfo';
 
+import sakura from "../assets/sakura.mp3";
+import { soundon, soundoff } from '../assets/icons';
+
 const Welcome = () => {
+  const audioRef = useRef(new Audio(sakura));
+  const [isPlayingMusic, setIsPlayingMusic] = useState(false)
+  audioRef.current.volume = 0.4;
+  audioRef.current.loop = true;
+
   const [ isRotating, setIsRotating ] = useState(false)
   const [currentStage, setCurrentStage] = useState(1)
+
+  useEffect(() => {
+    if(isPlayingMusic) {
+      audioRef.current.play();
+    }
+
+    return () => {
+      audioRef.current.pause();
+    }
+  }, [isPlayingMusic])
+
+
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null; // screenscale not defined
@@ -58,7 +78,7 @@ const Welcome = () => {
           <ambientLight intensity={0.5} />
           <hemisphereLight skyColor='#b1e1ff' groundColor='#000000' intensity={1}/>
           <Bird />
-          <Sky />
+          <Sky isRotating={isRotating} />
           <Island
             position= {islandPosition}
             scale = {islandScale}
@@ -76,6 +96,13 @@ const Welcome = () => {
         </Suspense>
 
       </Canvas>
+      <div className='absolute bottom-2 left-2'>
+        <img src={!isPlayingMusic ? soundoff : soundon}
+          alt='sound on/off'
+          className='w-10 h-10 cursor-pointer object-contain'
+          onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+        />
+      </div>
     </section>
   )
 }
