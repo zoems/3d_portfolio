@@ -18,6 +18,8 @@ const renderContent = {
       Hi, I am <span className='font-semibold'>Zoe Mawby Smart</span> 👋
       <br />
       A Software Engineer from Australia
+      <br />
+      <span className='sm:text-sm'>Use the arrow keys or drag to explore the island!</span>
     </h1>
   ),
   2: (
