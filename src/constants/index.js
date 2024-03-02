@@ -1,4 +1,4 @@
-import { gls, uni, oberholz, ZMS, starbucks, tesla } from "../assets/images"; // zero logic
+import { gls, uni, oberholz, ZMS, starbucks } from "../assets/images"; // zero logic
 import {
     ruby,
     figma,
@@ -165,11 +165,11 @@ export const skills = [
   ];
 
 export const socialLinks = [
-    {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
+    // {
+    //     name: 'Contact',
+    //     iconUrl: contact,
+    //     link: '/contact',
+    // },
     {
         name: 'GitHub',
         iconUrl: github,
