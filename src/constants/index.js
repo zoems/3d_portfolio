@@ -113,6 +113,43 @@ export const skills = [
 
   export const experiences = [
     {
+        title: "Full-Stack Web Developer",
+        company_name: "Freelance",
+        icon: ZMS,
+        iconBg: "#f2f230",
+        date: "Feb 2024 - Present",
+        points: [
+          "Creating responsive web design using Figma.",
+          "GitHub for version control.",
+          "Deploying websites on Heroku and managing media with Cloudinary.",
+        ],
+      },
+    {
+      title: "Store Lead",
+      company_name: "St Oberholz Coworking and Cafe",
+      icon: oberholz,
+      iconBg: "#f92c57",
+      date: "Jan 2021 - Oct 2023",
+      points: [
+        "Colaborated on the development of a company-wide barista training program",
+        "Managed staff shift schedules of circa 2 employees across three different locations",
+        "Initiated and oversaw significant conceptual changes within the coworking space and cafe enhancing operational efficiency",
+        "Executed human resources responsibilities within the managerial capacity",
+      ],
+    },
+      {
+        title: "Biochemistry Ba.Sc (Incomplete)",
+        company_name: "Freie Universität, Berlin",
+        icon: uni,
+        iconBg: "#cbff00",
+        date: "2019-2022",
+        points: [
+          "Advanced in Chem, Phys, and Maths, despite an incomplete degree",
+          "Showcased resilience and tenacity throughout 6 semesters of rigorous academic pursuit",
+          "Demonstrated decision-making skills and keen self-awareness, opting to explore a new path aligned more with my current aspirations",
+        ],
+      },
+      {
         title: "Camp Counsellor / Teacher",
         company_name: "GLS - German Language School",
         icon: gls,
@@ -125,51 +162,14 @@ export const skills = [
           "Developed and organized activities while effectively managing budget and expectations",
         ],
       },
-      {
-          title: "Biochemistry Ba.Sc (Incomplete)",
-          company_name: "Freie Universität, Berlin",
-          icon: uni,
-          iconBg: "#cbff00",
-          date: "2019-2022",
-          points: [
-            "Advanced in Chem, Phys, and Maths, despite an incomplete degree",
-            "Showcased resilience and tenacity throughout 6 semesters of rigorous academic pursuit",
-            "Demonstrated decision-making skills and keen self-awareness, opting to explore a new path aligned more with my current aspirations",
-          ],
-      },
-      {
-        title: "Store Lead",
-        company_name: "St Oberholz Coworking and Cafe",
-        icon: oberholz,
-        iconBg: "#f92c57",
-        date: "Jan 2021 - Oct 2023",
-        points: [
-          "Colaborated on the development of a company-wide barista training program",
-          "Managed staff shift schedules of circa 2 employees across three different locations",
-          "Initiated and oversaw significant conceptual changes within the coworking space and cafe enhancing operational efficiency",
-          "Executed human resources responsibilities within the managerial capacity",
-        ],
-      },
-      {
-        title: "Full-Stack Web Developer",
-        company_name: "Freelance",
-        icon: ZMS,
-        iconBg: "#f2f230",
-        date: "Feb 2024 - Present",
-        points: [
-            "Creating responsive web design using Figma.",
-            "GitHub for version control.",
-            "Deploying websites on Heroku and managing media with Cloudinary.",
-        ],
-      },
-  ];
+    ];
 
-export const socialLinks = [
-    // {
-    //     name: 'Contact',
-    //     iconUrl: contact,
-    //     link: '/contact',
-    // },
+    export const socialLinks = [
+      // {
+        //     name: 'Contact',
+        //     iconUrl: contact,
+        //     link: '/contact',
+        // },
     {
         name: 'GitHub',
         iconUrl: github,
@@ -187,8 +187,8 @@ export const projects = [
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Portfolio Website',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/zoems/3d-portfolio',
+        description: 'Developed a JS + React website alongside a youube tutorial using new 3d modeling tech with email functionality',
+        link: 'https://github.com/zoems/3d_portfolio',
     },
     {
         iconUrl: threads,
@@ -208,14 +208,14 @@ export const projects = [
         iconUrl: estate,
         theme: 'btn-back-black',
         name: 'SmartAqua',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+        description: 'Work in progress.',
         link: 'https://github.com/zoems/smartaqua',
     },
         {
         iconUrl: estate,
         theme: 'btn-back-black',
         name: 'Tart Twins Online Store',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
+        description: 'Work in progress.',
         link: 'https://github.com/zoems/tart-twins',
     },
 
